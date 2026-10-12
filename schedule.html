@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Расписание — Кинотеатр «Кадр»</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Шапка страницы -->
+  <header>
+    <img id="logo" src="img/logo.svg" alt="Логотип" width="50" height="50">
+    <h1>Кинотеатр «Кадр»</h1>
+  </header>
+
+  <!-- Навигационное меню -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="index.html#about">О нас</a></li>
+      <li><a href="index.html#services">Наши услуги</a></li>
+      <li><a href="schedule.html">Расписание</a></li>
+      <li><a href="register.html">Регистрация</a></li>
+      <li><a href="index.html#contacts">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Расписание сеансов</h2>
+
+      <!-- Таблица сеансов -->
+      <table class="schedule" border="1" cellpadding="6" cellspacing="0">
+        <thead>
+          <tr>
+            <th colspan="5">Сеансы на 12 октября</th>
+          </tr>
+          <tr>
+            <th>Фильм</th>
+            <th>Зал</th>
+            <th>Время</th>
+            <th>Цена, руб.</th>
+            <th>Билеты</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="3">«Северный ветер», 12+</td>
+            <td>1</td>
+            <td>10:00</td>
+            <td>250</td>
+            <td><a href="register.html">Купить</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>14:30</td>
+            <td>300</td>
+            <td><a href="register.html">Купить</a></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>19:00</td>
+            <td>400</td>
+            <td><a href="register.html">Купить</a></td>
+          </tr>
+          <tr>
+            <td rowspan="2">«Последний кадр», 16+</td>
+            <td>3</td>
+            <td>12:00</td>
+            <td>250</td>
+            <td><a href="register.html">Купить</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>21:00</td>
+            <td>400</td>
+            <td><a href="register.html">Купить</a></td>
+          </tr>
+          <tr>
+            <td rowspan="2">«Лесная сказка», 0+</td>
+            <td>2</td>
+            <td>11:00</td>
+            <td>200</td>
+            <td><a href="register.html">Купить</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>16:00</td>
+            <td>300</td>
+            <td><a href="register.html">Купить</a></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">Всего сеансов</td>
+            <td>7</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+  </main>
+
+  <!-- Подвал -->
+  <footer>
+    <p>&copy; 2026 Кинотеатр «Кадр». Все права защищены.</p>
+    <p>Телефон: +7 (391) 200-00-00</p>
+  </footer>
+</body>
+</html>

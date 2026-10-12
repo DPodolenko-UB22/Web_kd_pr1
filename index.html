@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кинотеатр «Кадр»</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Шапка страницы -->
+  <header>
+    <img id="logo" src="img/logo.svg" alt="Логотип" width="50" height="50">
+    <h1>Кинотеатр «Кадр»</h1>
+  </header>
+
+  <!-- Навигационное меню -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="#about">О нас</a></li>
+      <li><a href="#services">Наши услуги</a></li>
+      <li><a href="schedule.html">Расписание</a></li>
+      <li><a href="register.html">Регистрация</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Раздел «О нас» -->
+    <section id="about">
+      <h2>О нас</h2>
+      <img class="photo" src="img/hall.jpg" alt="Зрительный зал" width="320" height="213">
+      <p>Кинотеатр «Кадр» работает с 2015 года. У нас три зала на 40, 120 и 220 мест.</p>
+      <p>Мы показываем новые российские и зарубежные фильмы.</p>
+    </section>
+
+    <!-- Раздел «Наши услуги» -->
+    <section id="services">
+      <h2>Наши услуги</h2>
+      <ul class="services">
+        <li class="service">Продажа и бронирование билетов</li>
+        <li class="service">Аренда зала для праздников</li>
+        <li class="service">Киноклуб по пятницам</li>
+      </ul>
+
+      <!-- Таблица с заголовками в строках -->
+      <table class="prices">
+        <caption>Цены на билеты</caption>
+        <tbody>
+          <tr>
+            <th scope="row">Будни</th>
+            <td>300 руб.</td>
+          </tr>
+          <tr>
+            <th scope="row">Выходные</th>
+            <td>400 руб.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Раздел «Контактная информация» -->
+    <section id="contacts">
+      <h2>Контактная информация</h2>
+      <p>Адрес: г. Красноярск, ул. Киношная, 1</p>
+      <p>Телефон: +7 (391) 200-00-00</p>
+      <p>E-mail: <a href="mailto:info@kino-kadr.ru">info@kino-kadr.ru</a></p>
+
+      <!-- Форма обратной связи (дополнительное задание) -->
+      <form class="feedback" action="#" method="post">
+        <h3>Напишите нам</h3>
+        <label for="fb-name">Имя</label>
+        <input type="text" id="fb-name" name="name" placeholder="Ваше имя" required>
+        <label for="fb-text">Сообщение</label>
+        <textarea id="fb-text" name="text" rows="4" placeholder="Ваш вопрос" required></textarea>
+        <input type="submit" value="Отправить">
+      </form>
+    </section>
+  </main>
+
+  <!-- Подвал -->
+  <footer>
+    <p>&copy; 2026 Кинотеатр «Кадр». Все права защищены.</p>
+    <p>Телефон: +7 (391) 200-00-00</p>
+  </footer>
+</body>
+</html>

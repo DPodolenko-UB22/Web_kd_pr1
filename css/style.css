@@ -1,0 +1,201 @@
+/* Общие стили страницы */
+body {
+  margin: 0;
+  background-color: #f0f0f0;
+  color: #333333;
+  font-family: Arial, sans-serif;
+}
+
+/* Шрифты и размеры заголовков */
+h1 {
+  font-family: Georgia, serif;
+  font-size: 32px;
+}
+h2 {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  color: #8b1e1e;
+}
+h3 {
+  font-family: Georgia, serif;
+  font-size: 18px;
+}
+
+/* Текстовые блоки */
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Рамки изображений */
+img {
+  border: 2px solid #8b1e1e;
+}
+#logo {
+  border: none;
+}
+
+/* Стили ссылок */
+a {
+  color: #8b1e1e;
+  text-decoration: underline;
+}
+a:hover {
+  color: #d9822b;
+  text-decoration: none;
+}
+
+/* Шапка */
+header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 20px;
+  background-color: #222222;
+  color: #ffffff;
+}
+header h1 {
+  margin: 0;
+  animation: show 1s;
+}
+
+/* Навигационное меню */
+nav {
+  background-color: #8b1e1e;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav a {
+  display: block;
+  padding: 10px 15px;
+  color: #ffffff;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: #d9822b;
+  color: #ffffff;
+}
+
+/* Разделы */
+section {
+  overflow: hidden;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+.photo {
+  float: right;
+  margin-left: 15px;
+  max-width: 40%;
+  height: auto;
+}
+
+/* Список услуг */
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+.service {
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+
+/* Таблица цен */
+.prices {
+  border-collapse: collapse;
+}
+.prices th,
+.prices td {
+  padding: 6px 12px;
+  border: 1px solid #999999;
+}
+.prices th {
+  background-color: #dddddd;
+  text-align: left;
+}
+
+/* Таблица сеансов */
+.schedule {
+  background-color: #ffffff;
+  text-align: center;
+}
+.schedule th {
+  background-color: #222222;
+  color: #ffffff;
+}
+.schedule tfoot {
+  font-weight: bold;
+}
+
+/* Формы */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  gap: 5px;
+}
+input,
+select,
+textarea {
+  padding: 6px;
+  border: 1px solid #999999;
+  font-size: 15px;
+}
+input[type="submit"] {
+  margin-top: 10px;
+  background-color: #8b1e1e;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #d9822b;
+}
+.agree {
+  margin-top: 5px;
+}
+
+/* Подвал */
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #222222;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Анимации */
+@keyframes show {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Адаптивность: телефоны */
+@media (max-width: 480px) {
+  .services {
+    grid-template-columns: 1fr;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  .photo {
+    float: none;
+    max-width: 100%;
+  }
+  .schedule {
+    font-size: 12px;
+  }
+  .schedule th,
+  .schedule td {
+    padding: 3px;
+  }
+}
